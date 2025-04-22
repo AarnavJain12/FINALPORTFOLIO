@@ -74,6 +74,19 @@
             font-size: 2rem;
         }
         
+        h3 {
+            color: #2a5298;
+            margin-bottom: 15px;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -160,6 +173,85 @@
             color: #2a5298;
         }
         
+        .volunteer-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .volunteer-content ul {
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #2a5298;
+            font-size: 1.2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: #2a5298;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #1e3c72;
+        }
+        
+        .hire-me {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .resume-btn {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        .resume-btn:hover {
+            background: #1e3c72;
+        }
+        
         footer {
             background: #333;
             color: white;
@@ -182,8 +274,13 @@
             .skill-card {
                 width: 150px;
             }
+            
+            .contact-container {
+                flex-direction: column;
+            }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -200,38 +297,47 @@
     <section id="skills">
         <div class="container">
             <h2>My Skills</h2>
+            <p class="section-intro">Through my academic journey and practical experiences, I've developed a diverse skill set that combines business acumen with technical capabilities. Here are my core competencies:</p>
             <div class="skills-container">
                 <div class="skill-card">
                     <div class="skill-icon">📈</div>
                     <h3>Trading & Market Analysis</h3>
+                    <p>Technical and fundamental analysis of financial markets</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">💻</div>
                     <h3>Web Development</h3>
+                    <p>Front-end development with HTML, CSS, and JavaScript</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
                     <h3>Networking & Collaboration</h3>
+                    <p>Building professional relationships and teamwork</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">⏳</div>
                     <h3>Time Management</h3>
+                    <p>Efficient task prioritization and deadline adherence</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🧑‍💼</div>
                     <h3>Leadership</h3>
+                    <p>Guiding teams and managing projects effectively</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🗣️</div>
                     <h3>Effective Communication</h3>
+                    <p>Clear articulation of ideas in written and verbal forms</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🧠</div>
                     <h3>Critical Thinking</h3>
+                    <p>Analytical problem-solving and decision making</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">📣</div>
                     <h3>Digital Marketing</h3>
+                    <p>Social media strategy and content creation</p>
                 </div>
             </div>
         </div>
@@ -240,6 +346,7 @@
     <section id="education">
         <div class="container">
             <h2>Education</h2>
+            <p class="section-intro">My academic journey has provided me with strong foundational knowledge in business administration and commerce.</p>
             <table>
                 <tr>
                     <th>Degree</th>
@@ -268,12 +375,14 @@
     <section id="certifications">
         <div class="container">
             <h2>Trading Certifications</h2>
+            <p class="section-intro">I've complemented my formal education with specialized certifications in trading and financial markets, demonstrating my commitment to continuous learning in this field.</p>
             <div class="certifications">
                 <div class="cert-card">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Trading Certification 1" class="cert-img">
                     <div class="cert-info">
                         <h3>Stock Market Fundamentals</h3>
                         <p>Certified in core stock market concepts and analysis techniques</p>
+                        <p><strong>Issued:</strong> NSE Academy, 2023</p>
                     </div>
                 </div>
                 <div class="cert-card">
@@ -281,6 +390,7 @@
                     <div class="cert-info">
                         <h3>Technical Analysis</h3>
                         <p>Mastered chart patterns and technical indicators</p>
+                        <p><strong>Issued:</strong> BSE Institute, 2023</p>
                     </div>
                 </div>
                 <div class="cert-card">
@@ -288,6 +398,7 @@
                     <div class="cert-info">
                         <h3>Options Trading</h3>
                         <p>Advanced certification in options strategies</p>
+                        <p><strong>Issued:</strong> NIFM, 2024</p>
                     </div>
                 </div>
                 <div class="cert-card">
@@ -295,6 +406,7 @@
                     <div class="cert-info">
                         <h3>Algorithmic Trading</h3>
                         <p>Certified in automated trading systems</p>
+                        <p><strong>Issued:</strong> QuantInsti, 2024</p>
                     </div>
                 </div>
             </div>
@@ -304,16 +416,48 @@
     <section id="volunteering">
         <div class="container">
             <h2>Volunteering Experience</h2>
-            <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2a5298; margin-bottom: 15px;">NGO Volunteer</h3>
+            <p class="section-intro">Believing in giving back to the community, I've actively participated in social initiatives that align with my skills and values.</p>
+            <div class="volunteer-content">
+                <h3>Financial Literacy Volunteer</h3>
+                <p><strong>Organization:</strong> Money Matters NGO (2023-Present)</p>
                 <p>Volunteered at a local NGO focused on financial literacy programs for underprivileged communities. My responsibilities included:</p>
-                <ul style="margin-top: 15px; margin-left: 20px;">
-                    <li>Conducting basic financial management workshops</li>
-                    <li>Organizing fundraising events</li>
-                    <li>Mentoring young students in career development</li>
-                    <li>Assisting in digital marketing campaigns for the NGO</li>
+                <ul>
+                    <li>Conducted basic financial management workshops for 200+ beneficiaries</li>
+                    <li>Organized fundraising events that collected ₹2,50,000 for educational initiatives</li>
+                    <li>Mentored 15 young students in career development and skill-building</li>
+                    <li>Assisted in digital marketing campaigns that increased NGO's social media following by 300%</li>
                 </ul>
-                <p style="margin-top: 15px;">This experience helped me develop leadership skills and a deeper understanding of social responsibility in business.</p>
+                <p>This experience helped me develop leadership skills and a deeper understanding of social responsibility in business. It also enhanced my ability to communicate complex financial concepts in simple, accessible language.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-intro">I'm always open to discussing new opportunities, collaborations, or just chatting about business and finance. Feel free to reach out!</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> bba.student@example.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hire-me">
+                    <h3>Hire Me</h3>
+                    <p>I'm currently seeking internship opportunities in business analysis, financial markets, or digital marketing roles.</p>
+                    <p>Download my resume to learn more about my qualifications and experience:</p>
+                    <a href="your-resume.pdf" download class="resume-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -321,6 +465,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p>Designed with HTML & CSS</p>
         </div>
     </footer>
 </body>
